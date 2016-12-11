@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ajax Request to SkyScanner</title>
+        <style>
+            body{
+                margin:50px;
+            }
+
+            .console{
+                background:#111;
+                padding:20px;
+                border:1px dashed green;
+                color: green;
+                font-family:monospace;
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <div class="console">
+
+    </div>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script>
+        $.ajax({url:"/api/skyscanner/GB/en-gb/LON/anywhere/GBP/anytime/anytime", method:"get"}).done(function(response){
+            $('.console').html(JSON.stringify(response));
+        }).fail(function(error){
+            console.log(error);
+            $('.console').html("<h1>Ooops! Something went wrong, check the console!</h1>");
+        });
+    </script>
+    </body>
+</html>

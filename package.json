@@ -1,0 +1,23 @@
+{
+  "name": "skyscanner-api-node-example",
+  "version": "1.0.0",
+  "description": "Node API Example to work with SkyScanner API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmcneel/skyscanner-api-node-example.git"
+  },
+  "author": "Latisha McNeel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmcneel/skyscanner-api-node-example/issues"
+  },
+  "homepage": "https://github.com/lmcneel/skyscanner-api-node-example#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.79.0"
+  }
+}
