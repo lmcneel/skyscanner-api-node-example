@@ -5,7 +5,7 @@ var request = require("request");
 var app = express();
 
 // Put your skyscanner api key here
-var api_key = "la992349893483139715787446358156";
+var api_key = "";
 
 
 // This will serve up any static files in the public folder
